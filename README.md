@@ -1,4 +1,6 @@
-# Bosk
+<p align="center"><img src="logo.png" alt="Bosk logo" width="128"></p>
+
+<h1 align="center">Bosk</h1>
 
 **Run a whole team of coding agents side by side, each on its own branch, on Windows.**
 
