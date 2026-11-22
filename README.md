@@ -61,6 +61,12 @@ The control API listens on `127.0.0.1` only and requires a random per-session to
 ## Install
 
 1. Download the installer from the [latest release](../../releases/latest) and run it.
+   **Skip the SmartScreen warning:** download with curl instead of the browser (cmd or PowerShell), then run the installer. Use the file name from the release:
+
+   ```cmd
+   curl.exe -L -O https://github.com/timsuv/bosk-releases/releases/download/v0.2.31/Bosk_0.2.31_x64-setup.exe
+   ```
+
 2. Start Bosk and add a local repository, or clone one by URL (`owner/repo` works for GitHub).
 3. Create your first agent.
 
