@@ -39,6 +39,9 @@ Every agent gets its own port block, so several dev servers run side by side. Li
 **Let agents orchestrate agents**
 Agents get a `bosk` CLI and an MCP server to start, follow, read and message other agents. Tell one agent "split this across three agents" and it will. Guardrails keep you in charge: a cap on agents started, no pushing or PRs by agents, and browser control that is off until you allow it.
 
+**Put agents on a schedule**
+Automations start agents on their own: at a time of day, every few minutes, whenever you create a task, or when you press Run now. Each run is a normal agent in its own branch, listed on the Automations page as *No changes*, *Needs review* or *Failed*, with a link to open it. Nothing runs until you switch automations on, and an automation never pushes or opens a PR; you review what it did.
+
 **Keep going when the app doesn't**
 Terminals run in a small background host, so agents survive closing the window, crashes and updates. Closing hides Bosk to the tray.
 
@@ -64,7 +67,7 @@ The control API listens on `127.0.0.1` only and requires a random per-session to
    **Skip the SmartScreen warning:** download with curl instead of the browser (cmd or PowerShell), then run the installer. Use the file name from the release:
 
    ```cmd
-   curl.exe -L -O https://github.com/timsuv/bosk-releases/releases/download/v0.2.31/Bosk_0.2.31_x64-setup.exe
+   curl.exe -L -O https://github.com/timsuv/bosk-releases/releases/download/v0.3.0/Bosk_0.3.0_x64-setup.exe
    ```
 
 2. Start Bosk and add a local repository, or clone one by URL (`owner/repo` works for GitHub).
